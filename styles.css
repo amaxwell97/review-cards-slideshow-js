@@ -4,3 +4,109 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom right, #EBF1F6, #bed1cf9c);
+}
+
+.title-container {
+    margin: 10% auto 30px;
+    text-align: center;
+}
+
+.title {
+    letter-spacing: 5px;
+}
+
+hr {
+    border: none;
+    background: #E78895;
+    height: 5px;
+    margin: 10px auto 0;
+    width: 70px;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    min-height: 475px;
+    width: 700px;
+    margin: 0 auto 0;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    box-shadow: #9b9b9b 5px 5px 12px 0px;
+}
+
+.review-cards-container {
+    height: 300px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.client-info > img {
+    border-radius: 50%;
+    width: 175px;
+    margin-bottom: 20px;
+    box-shadow: #E78895 8px -5px ;
+}
+
+.client-name {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.client-title {
+    color: #E78895;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.review-container {
+    color: #646464;
+    width: 90%;
+    margin: 10px auto 0;
+}
+
+.controls-container {
+    margin-top: 15px;
+}
+
+.point-left {
+    color: #E78895;
+    font-size: 25px;
+    rotate: 90deg;
+    margin-right: 12px;
+    transform: rotateX(180deg);
+}
+
+.point-right {
+    color: #E78895;
+    font-size: 25px;
+    rotate: 90deg;
+    margin-left: 12px;
+}
+
+.randomize-btn {
+    background-color: transparent;
+    border: solid #E78895;
+    border-radius: 10px;
+    color: #E78895;
+    height: 30px;
+    width: 85px;
+    margin-top: 10px;
+}
+
+.randomize-btn:hover {
+    background-color: #E78895;
+    color: #fff;
+    cursor: pointer;
+}
