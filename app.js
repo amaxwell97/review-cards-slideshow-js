@@ -20,15 +20,14 @@ const clientInformationArr = [
         name: 'Ginny & Kevin Bluester',
         title: 'SLOTH OWNERS',
         img: 'images/weird-couple-with-slot-portrait.jpg',
-        review: 
-            `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        review: `Quis vel eros donec ac odio tempor orci dapibus ultrices. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Eu lobortis elementum nibh tellus molestie. Elementum integer enim neque volutpat ac tincidunt vitae.`,
     },
     {
         id: 3,
         name: 'Avery Maxwell',
         title: 'WEB DEVELOPER',
         img: 'images/avery-headshot.jpg',
-        review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        review: `Pulvinar pellentesque habitant morbi tristique. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris. Id porta nibh venenatis cras sed. Est placerat in egestas erat imperdiet sed euismod nisi porta.`,
     },
 ]
 
@@ -47,7 +46,7 @@ const nextReview = () => {
         clientName.innerText = clientInformationArr[currentIndex].name;
         clientTitle.innerText = clientInformationArr[currentIndex].title;
         clientReview.innerText = clientInformationArr[currentIndex].review;
-        clientImg.src = clientInformationArr[0].img;
+        clientImg.src = clientInformationArr[currentIndex].img;
     } else {
         ++currentIndex;
         clientName.innerText = clientInformationArr[currentIndex].name;
