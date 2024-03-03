@@ -82,6 +82,9 @@ hr {
 
 .point-left {
     color: #E78895;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     font-size: 25px;
     rotate: 90deg;
     margin-right: 12px;
@@ -90,6 +93,9 @@ hr {
 
 .point-right {
     color: #E78895;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     font-size: 25px;
     rotate: 90deg;
     margin-left: 12px;
