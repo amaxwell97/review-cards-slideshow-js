@@ -83,3 +83,21 @@ const prevReview = () => {
 }
 
 leftArrow.addEventListener('click', prevReview);
+
+const randomReview = () => {
+    let ranNum = Math.floor(Math.random() * clientInformationArr.length);
+    let currentIndex = clientInformationArr.findIndex((index) => index.name == clientName.innerText.toString());
+    if (ranNum == currentIndex) {
+        if (ranNum == 0) {
+            ++ranNum;
+        } else if (ranNum == (clientInformationArr.length - 1) || ranNum > 0) {
+            --ranNum;
+        }
+    }
+    clientName.innerText = clientInformationArr[ranNum].name;
+    clientTitle.innerText = clientInformationArr[ranNum].title;
+    clientReview.innerText = clientInformationArr[ranNum].review;
+    clientImg.src = clientInformationArr[ranNum].img;
+}
+
+randomizeBtn.addEventListener('click', randomReview);
